@@ -48,7 +48,6 @@ def valid(board, num, pos):
         for col in range(square_y * 3, (square_y + 1) * 3):
             if board[row][col] == num and (pos[0] != row and pos[1] != col):
                 return False
-
     return True
 
 def find_empty(board):
@@ -73,8 +72,6 @@ def solve(board):
     
     return False
 
-
-# print(valid(board, 9, (3,1)))
 print_board(board)
 print("-------------------------")
 solve(board)
