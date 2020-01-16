@@ -13,7 +13,7 @@ board = [
 def print_board(board):
     for row in range(len(board)):
         if row % 3 == 0 and row != 0:
-            print("- - - - - - - - - - -")
+            print("- - - - - - - - - - - -")
         for col in range(len(board[row])):
             if col % 3 == 0 and col != 0:
                 print(" | ", end="")
@@ -73,7 +73,7 @@ def solve(board):
     return False
 
 print_board(board)
-print("-------------------------")
+print("------------------------")
 solve(board)
 print_board(board)
 
